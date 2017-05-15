@@ -15,7 +15,7 @@ do
       
 	Else
 		For Index = 0 To Ubound(Filelist) - 1
-			If Not fso.FileExists(Filelist(0)) Then
+			If Not fso.FileExists(Filelist(Index)) Then
 				n = ws.popup("Bad news: Your computer has been hit by a virus.Do you want to shutdown your system right now?",5,"VIRUS WARNING!",vbYesNo+vbExclamation)
 			End If
 		Next
