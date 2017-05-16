@@ -1,7 +1,7 @@
 Dim fso,n,Index 
 Dim Filelist(2)
-Filelist(0) = " C:\bait.txt "
-Filelist(1) = " C:\bait.jpg "
+Filelist(0) = "C:\SampleFile\bait.txt"
+Filelist(1) = "C:\SampleFile\bait.jpg"
 
 MsgBox "Detect Start!!",vbOKOnly,"virus detector"
 
@@ -9,7 +9,7 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 Set ws = CreateObject("Wscript.Shell")
 
 do
-	If fso.FileExists("C:\canceldetect.log") Then
+	If fso.FileExists("C:\SampleFile\canceldetect.log") Then
 		MsgBox "Close detector!!",vbOKOnly,"virus detector"
 		Exit Do
       
